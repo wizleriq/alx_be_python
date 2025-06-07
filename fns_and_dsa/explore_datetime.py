@@ -12,7 +12,7 @@ def calculate_future_date(days):
 display_current_datetime()
 
 try:
-    user_input = int(input("Enter the number of days to add: "))
+    user_input = int(input("Enter the number of days to add to the current date: "))
     calculate_future_date(user_input)
 except ValueError:
     print("Please enter a valis integer")
