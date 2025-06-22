@@ -5,12 +5,13 @@ class Shape:
          raise NotImplementedError("Subclasses must implement the area method.")
 
 class Rectangle(Shape):
-     def __init__(self, length, width):
-          self.length = length
-          self.width =  width
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
     
-     def area (self):
-      return self.width * self.length 
+    def area(self):
+        return self.length * self.width
+
      
 class Circle(Shape):
     def __init__(self, radius):
@@ -18,6 +19,8 @@ class Circle(Shape):
 
     def area(self):
         return math.pi * self.radius ** 2
+    
+    polymorphism_demo.py doesn't contain: ["self.length * self.width"]
 
 
 
